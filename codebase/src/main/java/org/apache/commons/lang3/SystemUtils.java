@@ -493,7 +493,12 @@ public class SystemUtils {
                     }
                 }
             } catch (final Exception ex) {
-                // Ignore and fall through to default below
+                // Log exception to avoid empty catch block (PMD: Avoid empty catch blocks)
+                try {
+                    System.err.println("SystemUtils: Failed to determine Java version: " + ex.getMessage());
+                } catch (final Exception ignore) {
+                    // If logging fails, ignore to preserve original behavior
+                }
             }
         }
         if (version == null) {
