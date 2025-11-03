@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.time.DateUtilsTest
+-------------------------------------------------------------------------------
+Tests run: 38, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.009 s <<< FAILURE! - in org.apache.commons.lang3.time.DateUtilsTest
+testTruncateLang59(org.apache.commons.lang3.time.DateUtilsTest)  Time elapsed: 0.002 s  <<< FAILURE!
+org.junit.ComparisonFailure: Check 01:02:03.000 expected:<2004-10-31 01:02:0[3].000 MDT> but was:<2004-10-31 01:02:0[0].000 MDT>
+	at org.apache.commons.lang3.time.DateUtilsTest.testTruncateLang59(DateUtilsTest.java:1158)
+
+testSetSeconds(org.apache.commons.lang3.time.DateUtilsTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<4> but was:<3>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:632)
+	at org.apache.commons.lang3.time.DateUtilsTest.testSetSeconds(DateUtilsTest.java:587)
+
+testAddMonths(org.apache.commons.lang3.time.DateUtilsTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<4> but was:<3>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:632)
+	at org.apache.commons.lang3.time.DateUtilsTest.testAddMonths(DateUtilsTest.java:339)
+
+testSetMonths(org.apache.commons.lang3.time.DateUtilsTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<4> but was:<3>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:632)
+	at org.apache.commons.lang3.time.DateUtilsTest.testSetMonths(DateUtilsTest.java:499)
+
+testSetDays(org.apache.commons.lang3.time.DateUtilsTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<4> but was:<3>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:632)
+	at org.apache.commons.lang3.time.DateUtilsTest.testSetDays(DateUtilsTest.java:521)
+
+testAddMilliseconds(org.apache.commons.lang3.time.DateUtilsTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<4> but was:<3>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:632)
+	at org.apache.commons.lang3.time.DateUtilsTest.testAddMilliseconds(DateUtilsTest.java:459)
+
+testSetHours(org.apache.commons.lang3.time.DateUtilsTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<4> but was:<3>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:632)
+	at org.apache.commons.lang3.time.DateUtilsTest.testSetHours(DateUtilsTest.java:543)
+
+testSetYears(org.apache.commons.lang3.time.DateUtilsTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<4> but was:<3>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:632)
+	at org.apache.commons.lang3.time.DateUtilsTest.testSetYears(DateUtilsTest.java:479)
+
