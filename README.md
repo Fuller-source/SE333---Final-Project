@@ -10,36 +10,36 @@ Prerequisites
 
     Java: JDK 11+ (or higher) and Maven 3.6+.
 
-Python: Python 3.10+ (or higher).
+    Python: Python 3.10+ (or higher).
 
-VS Code: Latest version with the Chat view.
+    VS Code: Latest version with the Chat view.
 
-Node.js: Version 18+ (LTS recommended).
+    Node.js: Version 18+ (LTS recommended).
 
-Git: And an active GitHub account.
+    Git: And an active GitHub account.
 
     GitHub CLI (gh): Required for the git_pull_request tool.
 
 Setup Steps
 
     git clone [YOUR REPOSITORY URL HERE]
-cd [YOUR REPOSITORY NAME]
+    cd [YOUR REPOSITORY NAME]
 
 Set up Python environment:
 Bash
 
 # Create and activate virtual environment
-uv venv
-source .venv/bin/activate   # macOS/Linux
+    uv venv
+    source .venv/bin/activate   # macOS/Linux
 # .venv\Scripts\activate    # Windows
 
 # Install MCP dependencies
-uv add mcp[cli] httpx fastmcp
+    uv add mcp[cli] httpx fastmcp
 
-Run the MCP Server:
+# Run the MCP Server:
 Bash
 
-python server.py
+    python server.py
 
 Connect to VS Code:
 
@@ -57,7 +57,7 @@ Enable Auto-Approve:
 
     Run Chat: Settings and enable Auto-Approve .
 
-How to Run the Agent
+# How to Run the Agent
 
 To start the agent's full autonomous workflow, send this command in the VS Code Chat:
 
