@@ -1,4 +1,4 @@
-SE333 Final Project: Intelligent Testing Agent
+# SE333 Final Project: Intelligent Testing Agent
 
 This project implements an autonomous AI software agent using the Model Context Protocol (MCP) framework to manage, test, and iteratively improve a complex Java Maven codebase. The agent's primary function is to achieve code stability, fix bugs, and enhance code quality, demonstrating a fully automated software development workflow.
 
