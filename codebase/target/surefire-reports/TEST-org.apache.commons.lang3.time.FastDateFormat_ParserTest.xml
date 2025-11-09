@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.408" tests="29" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.454" tests="29" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/24.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/james/SE333/SE333 - Final Project/codebase/target/surefire/surefirebooter17310421461430992608.jar /Users/james/SE333/SE333 - Final Project/codebase/target/surefire 2025-11-09T12-52-36_895-jvmRun1 surefire8334895324735112589tmp surefire_018373268422761624067tmp"/>
+    <property name="sun.java.command" value="/Users/james/SE333/SE333 - Final Project/codebase/target/surefire/surefirebooter6208552894033917051.jar /Users/james/SE333/SE333 - Final Project/codebase/target/surefire 2025-11-09T13-01-32_750-jvmRun1 surefire17916788218440241207tmp surefire_03039826926387274364tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/james/SE333/SE333 - Final Project/codebase/target/test-classes:/Users/james/SE333/SE333 - Final Project/codebase/target/classes:/Users/james/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/james/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/james/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/james/.m2/repository/org/easymock/easymock/3.1/easymock-3.1.jar:/Users/james/.m2/repository/cglib/cglib-nodep/2.2.2/cglib-nodep-2.2.2.jar:/Users/james/.m2/repository/org/objenesis/objenesis/1.2/objenesis-1.2.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/james/SE333/SE333 - Final Project/codebase/target/surefire/surefirebooter17310421461430992608.jar"/>
+    <property name="surefire.real.class.path" value="/Users/james/SE333/SE333 - Final Project/codebase/target/surefire/surefirebooter6208552894033917051.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="24.0.2"/>
@@ -62,12 +62,12 @@
   <testcase name="testSpecialCharacters" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0"/>
   <testcase name="testShortDateStyleWithLocales" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0"/>
   <testcase name="testMilleniumBug" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0"/>
-  <testcase name="testLocaleMatches" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.001"/>
+  <testcase name="testLocaleMatches" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0"/>
   <testcase name="testDayOf" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0"/>
   <testcase name="testParseZone" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0"/>
   <testcase name="testAmPm" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0"/>
   <testcase name="testLowYearPadding" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0"/>
-  <testcase name="testLocales_Long_AD" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.079"/>
+  <testcase name="testLocales_Long_AD" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.094"/>
   <testcase name="testLocales_Long_BC" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.011"/>
   <testcase name="testParseNumerics" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0"/>
   <testcase name="testLang303" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.001"/>
@@ -77,14 +77,14 @@
   <testcase name="testLANG_832" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0"/>
   <testcase name="test_Equality_Hash" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0"/>
   <testcase name="testLocales_ShortNoEra_AD" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.067"/>
-  <testcase name="testLocales_ShortNoEra_BC" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.006"/>
+  <testcase name="testLocales_ShortNoEra_BC" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.007"/>
   <testcase name="testParseLongShort" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.001"/>
-  <testcase name="testLocales_LongNoEra_AD" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.064"/>
+  <testcase name="testLocales_LongNoEra_AD" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.087"/>
   <testcase name="testLocales_LongNoEra_BC" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.008"/>
-  <testcase name="testLocales_Short_AD" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.077"/>
+  <testcase name="testLocales_Short_AD" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.08"/>
   <testcase name="testLocales_Short_BC" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.009"/>
   <testcase name="testEquals" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0"/>
-  <testcase name="testParses" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.084"/>
+  <testcase name="testParses" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0.088"/>
   <testcase name="testQuotes" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0"/>
   <testcase name="testTimeZoneMatches" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0"/>
   <testcase name="testPatternMatches" classname="org.apache.commons.lang3.time.FastDateFormat_ParserTest" time="0"/>

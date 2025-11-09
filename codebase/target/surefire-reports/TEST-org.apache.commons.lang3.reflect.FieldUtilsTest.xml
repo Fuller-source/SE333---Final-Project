@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0.008" tests="44" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0.009" tests="44" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/24.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/james/SE333/SE333 - Final Project/codebase/target/surefire/surefirebooter17310421461430992608.jar /Users/james/SE333/SE333 - Final Project/codebase/target/surefire 2025-11-09T12-52-36_895-jvmRun1 surefire8334895324735112589tmp surefire_018373268422761624067tmp"/>
+    <property name="sun.java.command" value="/Users/james/SE333/SE333 - Final Project/codebase/target/surefire/surefirebooter6208552894033917051.jar /Users/james/SE333/SE333 - Final Project/codebase/target/surefire 2025-11-09T13-01-32_750-jvmRun1 surefire17916788218440241207tmp surefire_03039826926387274364tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/james/SE333/SE333 - Final Project/codebase/target/test-classes:/Users/james/SE333/SE333 - Final Project/codebase/target/classes:/Users/james/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/james/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/james/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/james/.m2/repository/org/easymock/easymock/3.1/easymock-3.1.jar:/Users/james/.m2/repository/cglib/cglib-nodep/2.2.2/cglib-nodep-2.2.2.jar:/Users/james/.m2/repository/org/objenesis/objenesis/1.2/objenesis-1.2.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/james/SE333/SE333 - Final Project/codebase/target/surefire/surefirebooter17310421461430992608.jar"/>
+    <property name="surefire.real.class.path" value="/Users/james/SE333/SE333 - Final Project/codebase/target/surefire/surefirebooter6208552894033917051.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="24.0.2"/>
@@ -60,41 +60,8 @@
     <property name="java.class.version" value="68.0"/>
   </properties>
   <testcase name="testReadStaticFieldForceAccess" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0.001"/>
-  <testcase name="testGetAllFieldsList" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0.002">
-    <failure message="expected:&lt;5&gt; but was:&lt;7&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<5> but was:<7>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:743)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at org.junit.Assert.assertEquals(Assert.java:555)
-	at org.junit.Assert.assertEquals(Assert.java:542)
-	at org.apache.commons.lang3.reflect.FieldUtilsTest.testGetAllFieldsList(FieldUtilsTest.java:167)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]></failure>
-  </testcase>
-  <testcase name="testReadDeclaredNamedField" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
+  <testcase name="testGetAllFieldsList" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0.001"/>
+  <testcase name="testReadDeclaredNamedField" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0.001"/>
   <testcase name="testReadNamedStaticField" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
   <testcase name="testReadDeclaredNamedStaticFieldForceAccess" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
   <testcase name="testReadDeclaredNamedFieldForceAccess" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
@@ -107,10 +74,10 @@
   <testcase name="testGetDeclaredFieldForceAccessIllegalArgumentException1" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
   <testcase name="testGetDeclaredFieldForceAccessIllegalArgumentException2" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
   <testcase name="testWriteFieldForceAccess" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
-  <testcase name="testAmbig" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
+  <testcase name="testAmbig" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0.001"/>
   <testcase name="testReadStaticFieldForceAccessIllegalArgumentException1" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
   <testcase name="testReadStaticFieldForceAccessIllegalArgumentException2" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0.001"/>
-  <testcase name="testWriteNamedField" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0.001"/>
+  <testcase name="testWriteNamedField" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
   <testcase name="testWriteDeclaredNamedFieldForceAccess" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
   <testcase name="testWriteDeclaredNamedStaticField" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
   <testcase name="testReadNamedField" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
@@ -125,40 +92,7 @@
   <testcase name="testGetFieldForceAccessIllegalArgumentException2" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
   <testcase name="testWriteNamedFieldForceAccess" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
   <testcase name="testReadNamedStaticFieldForceAccess" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
-  <testcase name="testGetAllFields" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0.001">
-    <failure message="expected:&lt;5&gt; but was:&lt;7&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<5> but was:<7>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:743)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at org.junit.Assert.assertEquals(Assert.java:555)
-	at org.junit.Assert.assertEquals(Assert.java:542)
-	at org.apache.commons.lang3.reflect.FieldUtilsTest.testGetAllFields(FieldUtilsTest.java:147)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]></failure>
-  </testcase>
+  <testcase name="testGetAllFields" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
   <testcase name="testReadStaticField" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
   <testcase name="testGetDeclaredFieldAccessIllegalArgumentException1" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>
   <testcase name="testGetDeclaredFieldAccessIllegalArgumentException2" classname="org.apache.commons.lang3.reflect.FieldUtilsTest" time="0"/>

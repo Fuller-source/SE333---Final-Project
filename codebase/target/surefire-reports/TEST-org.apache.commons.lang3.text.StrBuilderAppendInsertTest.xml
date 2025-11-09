@@ -12,7 +12,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/24.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/james/SE333/SE333 - Final Project/codebase/target/surefire/surefirebooter17310421461430992608.jar /Users/james/SE333/SE333 - Final Project/codebase/target/surefire 2025-11-09T12-52-36_895-jvmRun1 surefire8334895324735112589tmp surefire_018373268422761624067tmp"/>
+    <property name="sun.java.command" value="/Users/james/SE333/SE333 - Final Project/codebase/target/surefire/surefirebooter6208552894033917051.jar /Users/james/SE333/SE333 - Final Project/codebase/target/surefire 2025-11-09T13-01-32_750-jvmRun1 surefire17916788218440241207tmp surefire_03039826926387274364tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/james/SE333/SE333 - Final Project/codebase/target/test-classes:/Users/james/SE333/SE333 - Final Project/codebase/target/classes:/Users/james/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/james/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/james/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/james/.m2/repository/org/easymock/easymock/3.1/easymock-3.1.jar:/Users/james/.m2/repository/cglib/cglib-nodep/2.2.2/cglib-nodep-2.2.2.jar:/Users/james/.m2/repository/org/objenesis/objenesis/1.2/objenesis-1.2.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/james/SE333/SE333 - Final Project/codebase/target/surefire/surefirebooter17310421461430992608.jar"/>
+    <property name="surefire.real.class.path" value="/Users/james/SE333/SE333 - Final Project/codebase/target/surefire/surefirebooter6208552894033917051.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="24.0.2"/>
@@ -59,7 +59,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="testAppendWithSeparators_Collection" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
+  <testcase name="testAppendWithSeparators_Collection" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0.002"/>
   <testcase name="testInsertWithNullText" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendFixedWidthPadRight_int" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendln_PrimitiveNumber" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
@@ -73,7 +73,7 @@
   <testcase name="testAppendAll_Collection" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendln_StringBuilder" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendNewLine" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
-  <testcase name="testAppend_CharArray_int_int" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0.001"/>
+  <testcase name="testAppend_CharArray_int_int" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendln_StringBuffer" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendAll_Iterator" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendSeparator_char_char" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
@@ -82,7 +82,7 @@
   <testcase name="testAppendWithNullText" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendln_StrBuilder" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendln_Object" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
-  <testcase name="testAppend_StrBuilder" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
+  <testcase name="testAppend_StrBuilder" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0.001"/>
   <testcase name="testAppendSeparator_String" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendln_String" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendSeparator_char_int" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
@@ -90,7 +90,7 @@
   <testcase name="testAppendAll_Array" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppend_StringBuilder_int_int" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendSeparator_char" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
-  <testcase name="testAppend_StringBuffer" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0.001"/>
+  <testcase name="testAppend_StringBuffer" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendWithSeparatorsWithNullText" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendSeparator_String_int" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendln_StringBuffer_int_int" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
@@ -108,6 +108,6 @@
   <testcase name="testAppend_CharArray" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendln_FormattedString" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendln_CharArray" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
-  <testcase name="testAppendln_StringBuilder_int_int" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0.001"/>
+  <testcase name="testAppendln_StringBuilder_int_int" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
   <testcase name="testAppendWithSeparators_Array" classname="org.apache.commons.lang3.text.StrBuilderAppendInsertTest" time="0"/>
 </testsuite>
