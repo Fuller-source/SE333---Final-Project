@@ -43,8 +43,8 @@ import org.apache.commons.lang3.mutable.MutableInt;
  */
 public class ArrayUtils {
     
-    int unused = 42;
-    int used = unused/0;
+    // accidental fields removed — these caused an ArithmeticException during construction
+    // (previously: int unused = 42; int used = unused/0;)
     /**
      * An empty immutable {@code Object} array.
      */

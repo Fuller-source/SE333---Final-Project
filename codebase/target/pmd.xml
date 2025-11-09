@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.17.0" timestamp="2025-11-03T16:13:08.525">
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/AnnotationUtils.java">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.17.0" timestamp="2025-11-09T12:52:19.016">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/AnnotationUtils.java">
 <violation beginline="72" endline="72" begincolumn="50" endcolumn="68" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" method="getShortClassName" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'java.lang': 'Class' is already in scope because it is declared in java.lang
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/ArrayUtils.java">
-<violation beginline="2294" endline="2294" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="indexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/ArrayUtils.java">
+<violation beginline="2295" endline="2295" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="indexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'ArrayUtils': 'isEmpty' is already in scope
 </violation>
-<violation beginline="2326" endline="2326" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="indexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+<violation beginline="2327" endline="2327" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="indexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'ArrayUtils': 'isEmpty' is already in scope
 </violation>
-<violation beginline="2388" endline="2388" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="lastIndexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+<violation beginline="2389" endline="2389" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="lastIndexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'ArrayUtils': 'isEmpty' is already in scope
 </violation>
-<violation beginline="2422" endline="2422" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="lastIndexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+<violation beginline="2423" endline="2423" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="lastIndexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'ArrayUtils': 'isEmpty' is already in scope
 </violation>
-<violation beginline="2501" endline="2501" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="indexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+<violation beginline="2502" endline="2502" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="indexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'ArrayUtils': 'isEmpty' is already in scope
 </violation>
-<violation beginline="2544" endline="2544" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="lastIndexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+<violation beginline="2545" endline="2545" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="lastIndexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'ArrayUtils': 'isEmpty' is already in scope
 </violation>
-<violation beginline="2605" endline="2605" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="indexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+<violation beginline="2606" endline="2606" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="indexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'ArrayUtils': 'isEmpty' is already in scope
 </violation>
-<violation beginline="2649" endline="2649" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="lastIndexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+<violation beginline="2650" endline="2650" begincolumn="13" endcolumn="23" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="lastIndexOf" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'ArrayUtils': 'isEmpty' is already in scope
 </violation>
-<violation beginline="3335" endline="3335" begincolumn="17" endcolumn="53" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+<violation beginline="3336" endline="3336" begincolumn="17" endcolumn="53" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `array != null &amp;&amp; array.length != 0`.
 </violation>
-<violation beginline="3346" endline="3346" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+<violation beginline="3347" endline="3347" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `array != null &amp;&amp; array.length != 0`.
 </violation>
-<violation beginline="3357" endline="3357" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+<violation beginline="3358" endline="3358" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `array != null &amp;&amp; array.length != 0`.
 </violation>
-<violation beginline="3368" endline="3368" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+<violation beginline="3369" endline="3369" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `array != null &amp;&amp; array.length != 0`.
 </violation>
-<violation beginline="3379" endline="3379" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+<violation beginline="3380" endline="3380" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `array != null &amp;&amp; array.length != 0`.
 </violation>
-<violation beginline="3390" endline="3390" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+<violation beginline="3391" endline="3391" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `array != null &amp;&amp; array.length != 0`.
 </violation>
-<violation beginline="3401" endline="3401" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+<violation beginline="3402" endline="3402" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `array != null &amp;&amp; array.length != 0`.
 </violation>
-<violation beginline="3412" endline="3412" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+<violation beginline="3413" endline="3413" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `array != null &amp;&amp; array.length != 0`.
 </violation>
-<violation beginline="3423" endline="3423" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+<violation beginline="3424" endline="3424" begincolumn="16" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `array != null &amp;&amp; array.length != 0`.
 </violation>
-<violation beginline="5800" endline="5800" begincolumn="31" endcolumn="41" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="removeAll" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+<violation beginline="5801" endline="5801" begincolumn="31" endcolumn="41" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ArrayUtils" method="removeAll" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'ArrayUtils': 'getLength' is already in scope
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/ClassUtils.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/ClassUtils.java">
 <violation beginline="1035" endline="1035" begincolumn="16" endcolumn="26" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="ClassUtils" method="getShortCanonicalName" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'ClassUtils': 'getShortClassName' is already in scope
 </violation>
@@ -69,7 +69,7 @@ Unnecessary qualifier 'ClassUtils': 'getShortClassName' is already in scope
 Unnecessary qualifier 'ClassUtils': 'getPackageName' is already in scope
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/Conversion.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/Conversion.java">
 <violation beginline="696" endline="696" begincolumn="31" endcolumn="73" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3" class="Conversion" method="intArrayToLong" variable="bits" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `(0xffffffffL &amp; src[i + srcPos]) &lt;&lt; shift`.
 </violation>
@@ -77,17 +77,17 @@ Useless parentheses around `(0xffffffffL &amp; src[i + srcPos]) &lt;&lt; shift`.
 Useless parentheses around `(nBools - 1) * 1 &lt; 16 - srcPos`.
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/EnumUtils.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/EnumUtils.java">
 <violation beginline="250" endline="250" begincolumn="9" endcolumn="58" rule="UselessPureMethodCall" ruleset="Error Prone" package="org.apache.commons.lang3" class="EnumUtils" method="processBitVector" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#uselesspuremethodcall" priority="3">
 Do not call pure method getEnumConstants if the result is not used.
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/ObjectUtils.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/ObjectUtils.java">
 <violation beginline="681" endline="681" begincolumn="20" endcolumn="31" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="Null" method="readResolve" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'ObjectUtils': 'NULL' is already in scope because it is declared in an enclosing type
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/StringUtils.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/StringUtils.java">
 <violation beginline="236" endline="236" begincolumn="17" endcolumn="28" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="StringUtils" method="isNotEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'StringUtils': 'isEmpty' is already in scope
 </violation>
@@ -116,15 +116,15 @@ Unnecessary qualifier 'StringUtils': 'startsWith' is already in scope
 Unnecessary qualifier 'StringUtils': 'endsWith' is already in scope
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/SystemUtils.java">
-<violation beginline="495" endline="497" begincolumn="15" endcolumn="14" rule="EmptyCatchBlock" ruleset="Error Prone" package="org.apache.commons.lang3" class="SystemUtils" method="&lt;clinit&gt;" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#emptycatchblock" priority="3">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/SystemUtils.java">
+<violation beginline="499" endline="501" begincolumn="19" endcolumn="18" rule="EmptyCatchBlock" ruleset="Error Prone" package="org.apache.commons.lang3" class="SystemUtils" method="&lt;clinit&gt;" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#emptycatchblock" priority="3">
 Avoid empty catch blocks
 </violation>
-<violation beginline="1426" endline="1426" begincolumn="16" endcolumn="101" rule="SimplifiedTernary" ruleset="Design" package="org.apache.commons.lang3" class="SystemUtils" method="isJavaAwtHeadless" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#simplifiedternary" priority="3">
+<violation beginline="1431" endline="1431" begincolumn="16" endcolumn="101" rule="SimplifiedTernary" ruleset="Design" package="org.apache.commons.lang3" class="SystemUtils" method="isJavaAwtHeadless" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#simplifiedternary" priority="3">
 This conditional expression can be simplified with || or &amp;&amp;
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/Validate.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/Validate.java">
 <violation beginline="506" endline="506" begincolumn="9" endcolumn="17" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3" class="Validate" method="noNullElements" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'Validate': 'notNull' is already in scope
 </violation>
@@ -141,7 +141,7 @@ Unnecessary qualifier 'Validate': 'notNull' is already in scope
 Unnecessary qualifier 'Validate': 'notNull' is already in scope
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/builder/CompareToBuilder.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/builder/CompareToBuilder.java">
 <violation beginline="466" endline="466" begincolumn="42" endcolumn="63" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3.builder" class="CompareToBuilder" method="append" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `(lhs &gt; rhs) ? 1 : 0`.
 </violation>
@@ -158,12 +158,12 @@ Useless parentheses around `(lhs &gt; rhs) ? 1 : 0`.
 Useless parentheses around `(lhs &gt; rhs) ? 1 : 0`.
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java">
 <violation beginline="958" endline="958" begincolumn="16" endcolumn="24" rule="OverrideBothEqualsAndHashcode" ruleset="Error Prone" package="org.apache.commons.lang3.builder" class="HashCodeBuilder" method="hashCode" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#overridebothequalsandhashcode" priority="3">
 Ensure you override both equals() and hashCode()
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java">
 <violation beginline="2136" endline="2136" begincolumn="20" endcolumn="33" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3.builder" class="DefaultToStringStyle" method="readResolve" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'ToStringStyle': 'DEFAULT_STYLE' is already in scope because it is inherited by an enclosing type
 </violation>
@@ -180,7 +180,7 @@ Unnecessary qualifier 'ToStringStyle': 'SIMPLE_STYLE' is already in scope becaus
 Unnecessary qualifier 'ToStringStyle': 'MULTI_LINE_STYLE' is already in scope because it is inherited by an enclosing type
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/exception/ExceptionContext.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/exception/ExceptionContext.java">
 <violation beginline="49" endline="49" begincolumn="29" endcolumn="44" rule="UnnecessaryModifier" ruleset="Code Style" package="org.apache.commons.lang3.exception" class="ExceptionContext" method="addContextValue" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
 Unnecessary modifier 'public' on method 'addContextValue': the method is declared in an interface type
 </violation>
@@ -203,7 +203,7 @@ Unnecessary modifier 'public' on method 'getContextEntries': the method is decla
 Unnecessary modifier 'public' on method 'getFormattedExceptionMessage': the method is declared in an interface type
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java">
 <violation beginline="284" endline="284" begincolumn="25" endcolumn="39" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3.exception" class="ExceptionUtils" method="getThrowableList" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'ExceptionUtils': 'getCause' is already in scope
 </violation>
@@ -214,12 +214,12 @@ Unnecessary qualifier 'ExceptionUtils': 'getThrowables' is already in scope
 Unnecessary qualifier 'ExceptionUtils': 'getRootCause' is already in scope
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/math/Fraction.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/math/Fraction.java">
 <violation beginline="477" endline="477" begincolumn="16" endcolumn="24" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3.math" class="Fraction" method="reduce" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'Fraction': 'getFraction' is already in scope
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java">
 <violation beginline="544" endline="544" begincolumn="41" endcolumn="52" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3.math" class="NumberUtils" method="createNumber" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'NumberUtils': 'createFloat' is already in scope
 </violation>
@@ -227,37 +227,37 @@ Unnecessary qualifier 'NumberUtils': 'createFloat' is already in scope
 Unnecessary qualifier 'NumberUtils': 'createDouble' is already in scope
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/mutable/MutableBoolean.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/mutable/MutableBoolean.java">
 <violation beginline="182" endline="182" begincolumn="42" endcolumn="58" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3.mutable" class="MutableBoolean" method="compareTo" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `value ? 1 : -1`.
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/mutable/MutableByte.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/mutable/MutableByte.java">
 <violation beginline="272" endline="272" begincolumn="42" endcolumn="71" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3.mutable" class="MutableByte" method="compareTo" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `value == anotherVal ? 0 : 1`.
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/mutable/MutableInt.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/mutable/MutableInt.java">
 <violation beginline="262" endline="262" begincolumn="42" endcolumn="71" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3.mutable" class="MutableInt" method="compareTo" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `value == anotherVal ? 0 : 1`.
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/mutable/MutableLong.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/mutable/MutableLong.java">
 <violation beginline="262" endline="262" begincolumn="42" endcolumn="71" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3.mutable" class="MutableLong" method="compareTo" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `value == anotherVal ? 0 : 1`.
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/mutable/MutableShort.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/mutable/MutableShort.java">
 <violation beginline="272" endline="272" begincolumn="42" endcolumn="71" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3.mutable" class="MutableShort" method="compareTo" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `value == anotherVal ? 0 : 1`.
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java">
 <violation beginline="245" endline="245" begincolumn="13" endcolumn="19" rule="AvoidBranchingStatementAsLastInLoop" ruleset="Error Prone" package="org.apache.commons.lang3.reflect" class="TypeUtils" method="unrollVariableAssignments" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#avoidbranchingstatementaslastinloop" priority="2">
 Avoid using a branching statement as the last in a loop.
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/text/StrBuilder.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/text/StrBuilder.java">
 <violation beginline="1383" endline="1383" begincolumn="26" endcolumn="72" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.lang3.text" class="StrBuilder" method="appendFixedWidthPadLeft" variable="str" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses around `obj == null ? getNullText() : obj.toString()`.
 </violation>
@@ -295,12 +295,12 @@ Avoid using a branching statement as the last in a loop.
 Avoid using a branching statement as the last in a loop.
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/text/StrSubstitutor.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/text/StrSubstitutor.java">
 <violation beginline="189" endline="189" begincolumn="16" endcolumn="30" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3.text" class="StrSubstitutor" method="replace" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'StrSubstitutor': 'replace' is already in scope
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java">
 <violation beginline="35" endline="35" begincolumn="19" endcolumn="23" rule="UnnecessaryModifier" ruleset="Code Style" package="org.apache.commons.lang3.text.translate" class="OPTION" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
 Unnecessary modifier 'static' on enum 'OPTION': nested enums are implicitly static
 </violation>
@@ -308,7 +308,7 @@ Unnecessary modifier 'static' on enum 'OPTION': nested enums are implicitly stat
 This conditional expression can be simplified with || or &amp;&amp;
 </violation>
 </file>
-<file name="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/time/DateUtils.java">
+<file name="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/time/DateUtils.java">
 <violation beginline="83" endline="83" begincolumn="30" endcolumn="39" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.lang3.time" class="DateUtils" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'DateUtils': 'SEMI_MONTH' is already in scope because it is declared in an enclosing type
 </violation>
@@ -346,42 +346,42 @@ Useless parentheses around `calendar.get(Calendar.SECOND) * MILLIS_PER_SECOND`.
 Useless parentheses around `calendar.get(Calendar.MILLISECOND) * 1`.
 </violation>
 </file>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/ClassUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/ClassUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/SerializationUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/SerializationUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/SerializationUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/SerializationUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/reflect/MemberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/reflect/MemberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg=" - Swallow
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg=" - Swallow the exception
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg=" - Swallow
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg=" - Swallow the exception
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/math/NumberUtils.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
-<suppressedviolation filename="/Users/james/Downloads/codebase/src/main/java/org/apache/commons/lang3/text/ExtendedMessageFormat.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
+<suppressedviolation filename="/Users/james/SE333/SE333 - Final Project/codebase/src/main/java/org/apache/commons/lang3/text/ExtendedMessageFormat.java" suppressiontype="//nopmd" msg="Avoid empty catch blocks" usermsg="
 "></suppressedviolation>
 </pmd>
