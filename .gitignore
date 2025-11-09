@@ -6,8 +6,4 @@ dist/
 wheels/
 *.egg-info
 
-# Prompt file
-tester.prompt.md
 
-# Virtual environments
-.venv
