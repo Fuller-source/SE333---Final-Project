@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "SE333 - Final Project",
+			"path": "."
+		},
+		{
+			"name": "codebase",
+			"path": "../../Downloads/codebase"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}

@@ -493,14 +493,19 @@ public class SystemUtils {
                     }
                 }
 <span class="nc" id="L495">            } catch (final Exception ex) {</span>
-                // Ignore and fall through to default below
-<span class="fc" id="L497">            }</span>
+                // Log exception to avoid empty catch block (PMD: Avoid empty catch blocks)
+                try {
+<span class="nc" id="L498">                    System.err.println(&quot;SystemUtils: Failed to determine Java version: &quot; + ex.getMessage());</span>
+<span class="nc" id="L499">                } catch (final Exception ignore) {</span>
+                    // If logging fails, ignore to preserve original behavior
+<span class="nc" id="L501">                }</span>
+<span class="fc" id="L502">            }</span>
         }
-<span class="pc bpc" id="L499" title="1 of 2 branches missed.">        if (version == null) {</span>
+<span class="pc bpc" id="L504" title="1 of 2 branches missed.">        if (version == null) {</span>
             // Safe fallback for modern JVMs: treat unknown/unsupported version strings as at least 1.8
-<span class="nc" id="L501">            version = JavaVersion.JAVA_1_8;</span>
+<span class="nc" id="L506">            version = JavaVersion.JAVA_1_8;</span>
         }
-<span class="fc" id="L503">        JAVA_SPECIFICATION_VERSION_AS_ENUM = version;</span>
+<span class="fc" id="L508">        JAVA_SPECIFICATION_VERSION_AS_ENUM = version;</span>
     }
 
     /**
@@ -520,8 +525,8 @@ public class SystemUtils {
      * @since 2.1
      * @since Java 1.4
      */
-<span class="fc" id="L523">    public static final String JAVA_UTIL_PREFS_PREFERENCES_FACTORY =</span>
-<span class="fc" id="L524">        getSystemProperty(&quot;java.util.prefs.PreferencesFactory&quot;);</span>
+<span class="fc" id="L528">    public static final String JAVA_UTIL_PREFS_PREFERENCES_FACTORY =</span>
+<span class="fc" id="L529">        getSystemProperty(&quot;java.util.prefs.PreferencesFactory&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -539,7 +544,7 @@ public class SystemUtils {
      *
      * @since Java 1.1
      */
-<span class="fc" id="L542">    public static final String JAVA_VENDOR = getSystemProperty(&quot;java.vendor&quot;);</span>
+<span class="fc" id="L547">    public static final String JAVA_VENDOR = getSystemProperty(&quot;java.vendor&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -557,7 +562,7 @@ public class SystemUtils {
      *
      * @since Java 1.1
      */
-<span class="fc" id="L560">    public static final String JAVA_VENDOR_URL = getSystemProperty(&quot;java.vendor.url&quot;);</span>
+<span class="fc" id="L565">    public static final String JAVA_VENDOR_URL = getSystemProperty(&quot;java.vendor.url&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -575,7 +580,7 @@ public class SystemUtils {
      *
      * @since Java 1.1
      */
-<span class="fc" id="L578">    public static final String JAVA_VERSION = getSystemProperty(&quot;java.version&quot;);</span>
+<span class="fc" id="L583">    public static final String JAVA_VERSION = getSystemProperty(&quot;java.version&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -594,7 +599,7 @@ public class SystemUtils {
      * @since 2.0
      * @since Java 1.2
      */
-<span class="fc" id="L597">    public static final String JAVA_VM_INFO = getSystemProperty(&quot;java.vm.info&quot;);</span>
+<span class="fc" id="L602">    public static final String JAVA_VM_INFO = getSystemProperty(&quot;java.vm.info&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -612,7 +617,7 @@ public class SystemUtils {
      *
      * @since Java 1.2
      */
-<span class="fc" id="L615">    public static final String JAVA_VM_NAME = getSystemProperty(&quot;java.vm.name&quot;);</span>
+<span class="fc" id="L620">    public static final String JAVA_VM_NAME = getSystemProperty(&quot;java.vm.name&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -630,7 +635,7 @@ public class SystemUtils {
      *
      * @since Java 1.2
      */
-<span class="fc" id="L633">    public static final String JAVA_VM_SPECIFICATION_NAME = getSystemProperty(&quot;java.vm.specification.name&quot;);</span>
+<span class="fc" id="L638">    public static final String JAVA_VM_SPECIFICATION_NAME = getSystemProperty(&quot;java.vm.specification.name&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -648,7 +653,7 @@ public class SystemUtils {
      *
      * @since Java 1.2
      */
-<span class="fc" id="L651">    public static final String JAVA_VM_SPECIFICATION_VENDOR = getSystemProperty(&quot;java.vm.specification.vendor&quot;);</span>
+<span class="fc" id="L656">    public static final String JAVA_VM_SPECIFICATION_VENDOR = getSystemProperty(&quot;java.vm.specification.vendor&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -666,7 +671,7 @@ public class SystemUtils {
      *
      * @since Java 1.2
      */
-<span class="fc" id="L669">    public static final String JAVA_VM_SPECIFICATION_VERSION = getSystemProperty(&quot;java.vm.specification.version&quot;);</span>
+<span class="fc" id="L674">    public static final String JAVA_VM_SPECIFICATION_VERSION = getSystemProperty(&quot;java.vm.specification.version&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -684,7 +689,7 @@ public class SystemUtils {
      *
      * @since Java 1.2
      */
-<span class="fc" id="L687">    public static final String JAVA_VM_VENDOR = getSystemProperty(&quot;java.vm.vendor&quot;);</span>
+<span class="fc" id="L692">    public static final String JAVA_VM_VENDOR = getSystemProperty(&quot;java.vm.vendor&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -702,7 +707,7 @@ public class SystemUtils {
      *
      * @since Java 1.2
      */
-<span class="fc" id="L705">    public static final String JAVA_VM_VERSION = getSystemProperty(&quot;java.vm.version&quot;);</span>
+<span class="fc" id="L710">    public static final String JAVA_VM_VERSION = getSystemProperty(&quot;java.vm.version&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -720,7 +725,7 @@ public class SystemUtils {
      *
      * @since Java 1.1
      */
-<span class="fc" id="L723">    public static final String LINE_SEPARATOR = getSystemProperty(&quot;line.separator&quot;);</span>
+<span class="fc" id="L728">    public static final String LINE_SEPARATOR = getSystemProperty(&quot;line.separator&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -738,7 +743,7 @@ public class SystemUtils {
      *
      * @since Java 1.1
      */
-<span class="fc" id="L741">    public static final String OS_ARCH = getSystemProperty(&quot;os.arch&quot;);</span>
+<span class="fc" id="L746">    public static final String OS_ARCH = getSystemProperty(&quot;os.arch&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -756,7 +761,7 @@ public class SystemUtils {
      *
      * @since Java 1.1
      */
-<span class="fc" id="L759">    public static final String OS_NAME = getSystemProperty(&quot;os.name&quot;);</span>
+<span class="fc" id="L764">    public static final String OS_NAME = getSystemProperty(&quot;os.name&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -774,7 +779,7 @@ public class SystemUtils {
      *
      * @since Java 1.1
      */
-<span class="fc" id="L777">    public static final String OS_VERSION = getSystemProperty(&quot;os.version&quot;);</span>
+<span class="fc" id="L782">    public static final String OS_VERSION = getSystemProperty(&quot;os.version&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -792,7 +797,7 @@ public class SystemUtils {
      *
      * @since Java 1.1
      */
-<span class="fc" id="L795">    public static final String PATH_SEPARATOR = getSystemProperty(&quot;path.separator&quot;);</span>
+<span class="fc" id="L800">    public static final String PATH_SEPARATOR = getSystemProperty(&quot;path.separator&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -812,8 +817,8 @@ public class SystemUtils {
      * @since 2.0
      * @since Java 1.2
      */
-<span class="pc bpc" id="L815" title="1 of 2 branches missed.">    public static final String USER_COUNTRY = getSystemProperty(&quot;user.country&quot;) == null ?</span>
-<span class="pc" id="L816">            getSystemProperty(&quot;user.region&quot;) : getSystemProperty(&quot;user.country&quot;);</span>
+<span class="pc bpc" id="L820" title="1 of 2 branches missed.">    public static final String USER_COUNTRY = getSystemProperty(&quot;user.country&quot;) == null ?</span>
+<span class="pc" id="L821">            getSystemProperty(&quot;user.region&quot;) : getSystemProperty(&quot;user.country&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -831,7 +836,7 @@ public class SystemUtils {
      *
      * @since Java 1.1
      */
-<span class="fc" id="L834">    public static final String USER_DIR = getSystemProperty(USER_DIR_KEY);</span>
+<span class="fc" id="L839">    public static final String USER_DIR = getSystemProperty(USER_DIR_KEY);</span>
 
     /**
      * &lt;p&gt;
@@ -849,7 +854,7 @@ public class SystemUtils {
      *
      * @since Java 1.1
      */
-<span class="fc" id="L852">    public static final String USER_HOME = getSystemProperty(USER_HOME_KEY);</span>
+<span class="fc" id="L857">    public static final String USER_HOME = getSystemProperty(USER_HOME_KEY);</span>
 
     /**
      * &lt;p&gt;
@@ -868,7 +873,7 @@ public class SystemUtils {
      * @since 2.0
      * @since Java 1.2
      */
-<span class="fc" id="L871">    public static final String USER_LANGUAGE = getSystemProperty(&quot;user.language&quot;);</span>
+<span class="fc" id="L876">    public static final String USER_LANGUAGE = getSystemProperty(&quot;user.language&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -886,7 +891,7 @@ public class SystemUtils {
      *
      * @since Java 1.1
      */
-<span class="fc" id="L889">    public static final String USER_NAME = getSystemProperty(&quot;user.name&quot;);</span>
+<span class="fc" id="L894">    public static final String USER_NAME = getSystemProperty(&quot;user.name&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -904,7 +909,7 @@ public class SystemUtils {
      *
      * @since 2.1
      */
-<span class="fc" id="L907">    public static final String USER_TIMEZONE = getSystemProperty(&quot;user.timezone&quot;);</span>
+<span class="fc" id="L912">    public static final String USER_TIMEZONE = getSystemProperty(&quot;user.timezone&quot;);</span>
 
     // Java version checks
     // -----------------------------------------------------------------------
@@ -919,7 +924,7 @@ public class SystemUtils {
      * The field will return {@code false} if {@link #JAVA_VERSION} is {@code null}.
      * &lt;/p&gt;
      */
-<span class="fc" id="L922">    public static final boolean IS_JAVA_1_1 = getJavaVersionMatches(&quot;1.1&quot;);</span>
+<span class="fc" id="L927">    public static final boolean IS_JAVA_1_1 = getJavaVersionMatches(&quot;1.1&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -929,7 +934,7 @@ public class SystemUtils {
      * The field will return {@code false} if {@link #JAVA_VERSION} is {@code null}.
      * &lt;/p&gt;
      */
-<span class="fc" id="L932">    public static final boolean IS_JAVA_1_2 = getJavaVersionMatches(&quot;1.2&quot;);</span>
+<span class="fc" id="L937">    public static final boolean IS_JAVA_1_2 = getJavaVersionMatches(&quot;1.2&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -939,7 +944,7 @@ public class SystemUtils {
      * The field will return {@code false} if {@link #JAVA_VERSION} is {@code null}.
      * &lt;/p&gt;
      */
-<span class="fc" id="L942">    public static final boolean IS_JAVA_1_3 = getJavaVersionMatches(&quot;1.3&quot;);</span>
+<span class="fc" id="L947">    public static final boolean IS_JAVA_1_3 = getJavaVersionMatches(&quot;1.3&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -949,7 +954,7 @@ public class SystemUtils {
      * The field will return {@code false} if {@link #JAVA_VERSION} is {@code null}.
      * &lt;/p&gt;
      */
-<span class="fc" id="L952">    public static final boolean IS_JAVA_1_4 = getJavaVersionMatches(&quot;1.4&quot;);</span>
+<span class="fc" id="L957">    public static final boolean IS_JAVA_1_4 = getJavaVersionMatches(&quot;1.4&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -959,7 +964,7 @@ public class SystemUtils {
      * The field will return {@code false} if {@link #JAVA_VERSION} is {@code null}.
      * &lt;/p&gt;
      */
-<span class="fc" id="L962">    public static final boolean IS_JAVA_1_5 = getJavaVersionMatches(&quot;1.5&quot;);</span>
+<span class="fc" id="L967">    public static final boolean IS_JAVA_1_5 = getJavaVersionMatches(&quot;1.5&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -969,7 +974,7 @@ public class SystemUtils {
      * The field will return {@code false} if {@link #JAVA_VERSION} is {@code null}.
      * &lt;/p&gt;
      */
-<span class="fc" id="L972">    public static final boolean IS_JAVA_1_6 = getJavaVersionMatches(&quot;1.6&quot;);</span>
+<span class="fc" id="L977">    public static final boolean IS_JAVA_1_6 = getJavaVersionMatches(&quot;1.6&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -981,7 +986,7 @@ public class SystemUtils {
      *
      * @since 3.0
      */
-<span class="fc" id="L984">    public static final boolean IS_JAVA_1_7 = getJavaVersionMatches(&quot;1.7&quot;);</span>
+<span class="fc" id="L989">    public static final boolean IS_JAVA_1_7 = getJavaVersionMatches(&quot;1.7&quot;);</span>
 
     // Operating system checks
     // -----------------------------------------------------------------------
@@ -1001,7 +1006,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="fc" id="L1004">    public static final boolean IS_OS_AIX = getOSMatchesName(&quot;AIX&quot;);</span>
+<span class="fc" id="L1009">    public static final boolean IS_OS_AIX = getOSMatchesName(&quot;AIX&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1013,7 +1018,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="fc" id="L1016">    public static final boolean IS_OS_HP_UX = getOSMatchesName(&quot;HP-UX&quot;);</span>
+<span class="fc" id="L1021">    public static final boolean IS_OS_HP_UX = getOSMatchesName(&quot;HP-UX&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1025,7 +1030,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="fc" id="L1028">    public static final boolean IS_OS_IRIX = getOSMatchesName(&quot;Irix&quot;);</span>
+<span class="fc" id="L1033">    public static final boolean IS_OS_IRIX = getOSMatchesName(&quot;Irix&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1037,7 +1042,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="pc bpc" id="L1040" title="2 of 4 branches missed.">    public static final boolean IS_OS_LINUX = getOSMatchesName(&quot;Linux&quot;) || getOSMatchesName(&quot;LINUX&quot;);</span>
+<span class="pc bpc" id="L1045" title="2 of 4 branches missed.">    public static final boolean IS_OS_LINUX = getOSMatchesName(&quot;Linux&quot;) || getOSMatchesName(&quot;LINUX&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1049,7 +1054,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="fc" id="L1052">    public static final boolean IS_OS_MAC = getOSMatchesName(&quot;Mac&quot;);</span>
+<span class="fc" id="L1057">    public static final boolean IS_OS_MAC = getOSMatchesName(&quot;Mac&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1061,7 +1066,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="fc" id="L1064">    public static final boolean IS_OS_MAC_OSX = getOSMatchesName(&quot;Mac OS X&quot;);</span>
+<span class="fc" id="L1069">    public static final boolean IS_OS_MAC_OSX = getOSMatchesName(&quot;Mac OS X&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1073,7 +1078,7 @@ public class SystemUtils {
      *
      * @since 3.1
      */
-<span class="fc" id="L1076">    public static final boolean IS_OS_FREE_BSD = getOSMatchesName(&quot;FreeBSD&quot;);</span>
+<span class="fc" id="L1081">    public static final boolean IS_OS_FREE_BSD = getOSMatchesName(&quot;FreeBSD&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1085,7 +1090,7 @@ public class SystemUtils {
      *
      * @since 3.1
      */
-<span class="fc" id="L1088">    public static final boolean IS_OS_OPEN_BSD = getOSMatchesName(&quot;OpenBSD&quot;);</span>
+<span class="fc" id="L1093">    public static final boolean IS_OS_OPEN_BSD = getOSMatchesName(&quot;OpenBSD&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1097,7 +1102,7 @@ public class SystemUtils {
      *
      * @since 3.1
      */
-<span class="fc" id="L1100">    public static final boolean IS_OS_NET_BSD = getOSMatchesName(&quot;NetBSD&quot;);</span>
+<span class="fc" id="L1105">    public static final boolean IS_OS_NET_BSD = getOSMatchesName(&quot;NetBSD&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1109,7 +1114,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="fc" id="L1112">    public static final boolean IS_OS_OS2 = getOSMatchesName(&quot;OS/2&quot;);</span>
+<span class="fc" id="L1117">    public static final boolean IS_OS_OS2 = getOSMatchesName(&quot;OS/2&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1121,7 +1126,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="fc" id="L1124">    public static final boolean IS_OS_SOLARIS = getOSMatchesName(&quot;Solaris&quot;);</span>
+<span class="fc" id="L1129">    public static final boolean IS_OS_SOLARIS = getOSMatchesName(&quot;Solaris&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1133,7 +1138,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="fc" id="L1136">    public static final boolean IS_OS_SUN_OS = getOSMatchesName(&quot;SunOS&quot;);</span>
+<span class="fc" id="L1141">    public static final boolean IS_OS_SUN_OS = getOSMatchesName(&quot;SunOS&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1145,7 +1150,7 @@ public class SystemUtils {
      *
      * @since 2.1
      */
-<span class="pc bpc" id="L1148" title="15 of 20 branches missed.">    public static final boolean IS_OS_UNIX = IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX</span>
+<span class="pc bpc" id="L1153" title="15 of 20 branches missed.">    public static final boolean IS_OS_UNIX = IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX</span>
             || IS_OS_SOLARIS || IS_OS_SUN_OS || IS_OS_FREE_BSD || IS_OS_OPEN_BSD || IS_OS_NET_BSD;
 
     /**
@@ -1158,7 +1163,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="fc" id="L1161">    public static final boolean IS_OS_WINDOWS = getOSMatchesName(OS_NAME_WINDOWS_PREFIX);</span>
+<span class="fc" id="L1166">    public static final boolean IS_OS_WINDOWS = getOSMatchesName(OS_NAME_WINDOWS_PREFIX);</span>
 
     /**
      * &lt;p&gt;
@@ -1170,7 +1175,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="fc" id="L1173">    public static final boolean IS_OS_WINDOWS_2000 = getOSMatches(OS_NAME_WINDOWS_PREFIX, &quot;5.0&quot;);</span>
+<span class="fc" id="L1178">    public static final boolean IS_OS_WINDOWS_2000 = getOSMatches(OS_NAME_WINDOWS_PREFIX, &quot;5.0&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1182,7 +1187,7 @@ public class SystemUtils {
      *
      * @since 3.1
      */
-<span class="fc" id="L1185">    public static final boolean IS_OS_WINDOWS_2003 = getOSMatches(OS_NAME_WINDOWS_PREFIX, &quot;5.2&quot;);</span>
+<span class="fc" id="L1190">    public static final boolean IS_OS_WINDOWS_2003 = getOSMatches(OS_NAME_WINDOWS_PREFIX, &quot;5.2&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1194,7 +1199,7 @@ public class SystemUtils {
      *
      * @since 3.1
      */
-<span class="fc" id="L1197">    public static final boolean IS_OS_WINDOWS_2008 = getOSMatches(OS_NAME_WINDOWS_PREFIX + &quot; Server 2008&quot;, &quot;6.1&quot;);</span>
+<span class="fc" id="L1202">    public static final boolean IS_OS_WINDOWS_2008 = getOSMatches(OS_NAME_WINDOWS_PREFIX + &quot; Server 2008&quot;, &quot;6.1&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1206,7 +1211,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="fc" id="L1209">    public static final boolean IS_OS_WINDOWS_95 = getOSMatches(OS_NAME_WINDOWS_PREFIX + &quot; 9&quot;, &quot;4.0&quot;);</span>
+<span class="fc" id="L1214">    public static final boolean IS_OS_WINDOWS_95 = getOSMatches(OS_NAME_WINDOWS_PREFIX + &quot; 9&quot;, &quot;4.0&quot;);</span>
     // Java 1.2 running on Windows98 returns 'Windows 95', hence the above
 
     /**
@@ -1219,7 +1224,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="fc" id="L1222">    public static final boolean IS_OS_WINDOWS_98 = getOSMatches(OS_NAME_WINDOWS_PREFIX + &quot; 9&quot;, &quot;4.1&quot;);</span>
+<span class="fc" id="L1227">    public static final boolean IS_OS_WINDOWS_98 = getOSMatches(OS_NAME_WINDOWS_PREFIX + &quot; 9&quot;, &quot;4.1&quot;);</span>
     // Java 1.2 running on Windows98 returns 'Windows 95', hence the above
 
     /**
@@ -1232,7 +1237,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="fc" id="L1235">    public static final boolean IS_OS_WINDOWS_ME = getOSMatches(OS_NAME_WINDOWS_PREFIX, &quot;4.9&quot;);</span>
+<span class="fc" id="L1240">    public static final boolean IS_OS_WINDOWS_ME = getOSMatches(OS_NAME_WINDOWS_PREFIX, &quot;4.9&quot;);</span>
     // Java 1.2 running on WindowsME may return 'Windows 95', hence the above
 
     /**
@@ -1245,7 +1250,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="fc" id="L1248">    public static final boolean IS_OS_WINDOWS_NT = getOSMatchesName(OS_NAME_WINDOWS_PREFIX + &quot; NT&quot;);</span>
+<span class="fc" id="L1253">    public static final boolean IS_OS_WINDOWS_NT = getOSMatchesName(OS_NAME_WINDOWS_PREFIX + &quot; NT&quot;);</span>
     // Windows 2000 returns 'Windows 2000' but may suffer from same Java1.2 problem
 
     /**
@@ -1258,7 +1263,7 @@ public class SystemUtils {
      *
      * @since 2.0
      */
-<span class="fc" id="L1261">    public static final boolean IS_OS_WINDOWS_XP = getOSMatches(OS_NAME_WINDOWS_PREFIX, &quot;5.1&quot;);</span>
+<span class="fc" id="L1266">    public static final boolean IS_OS_WINDOWS_XP = getOSMatches(OS_NAME_WINDOWS_PREFIX, &quot;5.1&quot;);</span>
 
     // -----------------------------------------------------------------------
     /**
@@ -1271,7 +1276,7 @@ public class SystemUtils {
      *
      * @since 2.4
      */
-<span class="fc" id="L1274">    public static final boolean IS_OS_WINDOWS_VISTA = getOSMatches(OS_NAME_WINDOWS_PREFIX, &quot;6.0&quot;);</span>
+<span class="fc" id="L1279">    public static final boolean IS_OS_WINDOWS_VISTA = getOSMatches(OS_NAME_WINDOWS_PREFIX, &quot;6.0&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1283,7 +1288,7 @@ public class SystemUtils {
      *
      * @since 3.0
      */
-<span class="fc" id="L1286">    public static final boolean IS_OS_WINDOWS_7 = getOSMatches(OS_NAME_WINDOWS_PREFIX, &quot;6.1&quot;);</span>
+<span class="fc" id="L1291">    public static final boolean IS_OS_WINDOWS_7 = getOSMatches(OS_NAME_WINDOWS_PREFIX, &quot;6.1&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1295,7 +1300,7 @@ public class SystemUtils {
      *
      * @since 3.2
      */
-<span class="fc" id="L1298">    public static final boolean IS_OS_WINDOWS_8 = getOSMatches(OS_NAME_WINDOWS_PREFIX, &quot;6.2&quot;);</span>
+<span class="fc" id="L1303">    public static final boolean IS_OS_WINDOWS_8 = getOSMatches(OS_NAME_WINDOWS_PREFIX, &quot;6.2&quot;);</span>
 
     /**
      * &lt;p&gt;
@@ -1309,7 +1314,7 @@ public class SystemUtils {
      * @since 2.1
      */
     public static File getJavaHome() {
-<span class="fc" id="L1312">        return new File(System.getProperty(JAVA_HOME_KEY));</span>
+<span class="fc" id="L1317">        return new File(System.getProperty(JAVA_HOME_KEY));</span>
     }
 
     /**
@@ -1324,7 +1329,7 @@ public class SystemUtils {
      * @since 2.1
      */
     public static File getJavaIoTmpDir() {
-<span class="fc" id="L1327">        return new File(System.getProperty(JAVA_IO_TMPDIR_KEY));</span>
+<span class="fc" id="L1332">        return new File(System.getProperty(JAVA_IO_TMPDIR_KEY));</span>
     }
 
     /**
@@ -1336,7 +1341,7 @@ public class SystemUtils {
      * @return true if matches, or false if not or can't determine
      */
     private static boolean getJavaVersionMatches(final String versionPrefix) {
-<span class="fc" id="L1339">        return isJavaVersionMatch(JAVA_SPECIFICATION_VERSION, versionPrefix);</span>
+<span class="fc" id="L1344">        return isJavaVersionMatch(JAVA_SPECIFICATION_VERSION, versionPrefix);</span>
     }
 
     /**
@@ -1347,7 +1352,7 @@ public class SystemUtils {
      * @return true if matches, or false if not or can't determine
      */
     private static boolean getOSMatches(final String osNamePrefix, final String osVersionPrefix) {
-<span class="fc" id="L1350">        return isOSMatch(OS_NAME, OS_VERSION, osNamePrefix, osVersionPrefix);</span>
+<span class="fc" id="L1355">        return isOSMatch(OS_NAME, OS_VERSION, osNamePrefix, osVersionPrefix);</span>
     }
 
     /**
@@ -1357,7 +1362,7 @@ public class SystemUtils {
      * @return true if matches, or false if not or can't determine
      */
     private static boolean getOSMatchesName(final String osNamePrefix) {
-<span class="fc" id="L1360">        return isOSNameMatch(OS_NAME, osNamePrefix);</span>
+<span class="fc" id="L1365">        return isOSNameMatch(OS_NAME, osNamePrefix);</span>
     }
 
     // -----------------------------------------------------------------------
@@ -1375,12 +1380,12 @@ public class SystemUtils {
      */
     private static String getSystemProperty(final String property) {
         try {
-<span class="fc" id="L1378">            return System.getProperty(property);</span>
-<span class="nc" id="L1379">        } catch (final SecurityException ex) {</span>
+<span class="fc" id="L1383">            return System.getProperty(property);</span>
+<span class="nc" id="L1384">        } catch (final SecurityException ex) {</span>
             // we are not allowed to look at this property
-<span class="nc" id="L1381">            System.err.println(&quot;Caught a SecurityException reading the system property '&quot; + property</span>
+<span class="nc" id="L1386">            System.err.println(&quot;Caught a SecurityException reading the system property '&quot; + property</span>
                     + &quot;'; the SystemUtils property value will default to null.&quot;);
-<span class="nc" id="L1383">            return null;</span>
+<span class="nc" id="L1388">            return null;</span>
         }
     }
 
@@ -1396,7 +1401,7 @@ public class SystemUtils {
      * @since 2.1
      */
     public static File getUserDir() {
-<span class="fc" id="L1399">        return new File(System.getProperty(USER_DIR_KEY));</span>
+<span class="fc" id="L1404">        return new File(System.getProperty(USER_DIR_KEY));</span>
     }
 
     /**
@@ -1411,7 +1416,7 @@ public class SystemUtils {
      * @since 2.1
      */
     public static File getUserHome() {
-<span class="fc" id="L1414">        return new File(System.getProperty(USER_HOME_KEY));</span>
+<span class="fc" id="L1419">        return new File(System.getProperty(USER_HOME_KEY));</span>
     }
 
     /**
@@ -1423,7 +1428,7 @@ public class SystemUtils {
      * @since Java 1.4
      */
     public static boolean isJavaAwtHeadless() {
-<span class="pc bpc" id="L1426" title="1 of 2 branches missed.">        return JAVA_AWT_HEADLESS != null ? JAVA_AWT_HEADLESS.equals(Boolean.TRUE.toString()) : false;</span>
+<span class="pc bpc" id="L1431" title="1 of 2 branches missed.">        return JAVA_AWT_HEADLESS != null ? JAVA_AWT_HEADLESS.equals(Boolean.TRUE.toString()) : false;</span>
     }
 
     /**
@@ -1442,7 +1447,7 @@ public class SystemUtils {
      * @return {@code true} if the actual version is equal or greater than the required version
      */
     public static boolean isJavaVersionAtLeast(final JavaVersion requiredVersion) {
-<span class="fc" id="L1445">        return JAVA_SPECIFICATION_VERSION_AS_ENUM.atLeast(requiredVersion);</span>
+<span class="fc" id="L1450">        return JAVA_SPECIFICATION_VERSION_AS_ENUM.atLeast(requiredVersion);</span>
     }
 
     /**
@@ -1458,10 +1463,10 @@ public class SystemUtils {
      * @return true if matches, or false if not or can't determine
      */
     static boolean isJavaVersionMatch(final String version, final String versionPrefix) {
-<span class="fc bfc" id="L1461" title="All 2 branches covered.">        if (version == null) {</span>
-<span class="fc" id="L1462">            return false;</span>
+<span class="fc bfc" id="L1466" title="All 2 branches covered.">        if (version == null) {</span>
+<span class="fc" id="L1467">            return false;</span>
         }
-<span class="fc" id="L1464">        return version.startsWith(versionPrefix);</span>
+<span class="fc" id="L1469">        return version.startsWith(versionPrefix);</span>
     }
 
     /**
@@ -1477,10 +1482,10 @@ public class SystemUtils {
      * @return true if matches, or false if not or can't determine
      */
     static boolean isOSMatch(final String osName, final String osVersion, final String osNamePrefix, final String osVersionPrefix) {
-<span class="pc bpc" id="L1480" title="1 of 4 branches missed.">        if (osName == null || osVersion == null) {</span>
-<span class="fc" id="L1481">            return false;</span>
+<span class="pc bpc" id="L1485" title="1 of 4 branches missed.">        if (osName == null || osVersion == null) {</span>
+<span class="fc" id="L1486">            return false;</span>
         }
-<span class="fc bfc" id="L1483" title="All 4 branches covered.">        return osName.startsWith(osNamePrefix) &amp;&amp; osVersion.startsWith(osVersionPrefix);</span>
+<span class="fc bfc" id="L1488" title="All 4 branches covered.">        return osName.startsWith(osNamePrefix) &amp;&amp; osVersion.startsWith(osVersionPrefix);</span>
     }
 
     /**
@@ -1494,10 +1499,10 @@ public class SystemUtils {
      * @return true if matches, or false if not or can't determine
      */
     static boolean isOSNameMatch(final String osName, final String osNamePrefix) {
-<span class="fc bfc" id="L1497" title="All 2 branches covered.">        if (osName == null) {</span>
-<span class="fc" id="L1498">            return false;</span>
+<span class="fc bfc" id="L1502" title="All 2 branches covered.">        if (osName == null) {</span>
+<span class="fc" id="L1503">            return false;</span>
         }
-<span class="fc" id="L1500">        return osName.startsWith(osNamePrefix);</span>
+<span class="fc" id="L1505">        return osName.startsWith(osNamePrefix);</span>
     }
 
     // -----------------------------------------------------------------------
@@ -1511,8 +1516,8 @@ public class SystemUtils {
      * &lt;/p&gt;
      */
     public SystemUtils() {
-<span class="fc" id="L1514">        super();</span>
-<span class="fc" id="L1515">    }</span>
+<span class="fc" id="L1519">        super();</span>
+<span class="fc" id="L1520">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

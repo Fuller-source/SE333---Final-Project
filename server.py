@@ -25,7 +25,7 @@ def run_pmd_analysis(project_path: str) -> dict:
             text=True
         )
         
-        # --- NEW LOGIC ---
+        
         # Now, always look for and parse the report.
         pmd_report_path = os.path.join(project_path, "target", "pmd.xml")
         
@@ -115,7 +115,7 @@ def get_quality_dashboard(project_path: str) -> dict:
     surefire_dir = os.path.join(project_path, "target", "surefire-reports")
     jacoco_report = os.path.join(project_path, "target", "jacoco-report", "jacoco.xml")
 
-    # --- 1. Parse Surefire Reports (Test Results) ---
+    # Parse Surefire Reports (Test Results)
     total_tests = 0
     total_failures = 0
     total_errors = 0
@@ -136,7 +136,7 @@ def get_quality_dashboard(project_path: str) -> dict:
 
     total_passed = total_tests - (total_failures + total_errors + total_skipped)
 
-    # --- 2. Parse JaCoCo Report (Coverage) ---
+    # Parse JaCoCo Report (Coverage)
     line_coverage = 0.0
     branch_coverage = 0.0
     method_coverage = 0.0
@@ -164,7 +164,7 @@ def get_quality_dashboard(project_path: str) -> dict:
         except ET.ParseError:
             pass # Skip malformed XML
 
-    # --- 3. Assemble the Dashboard ---
+    # Assemble the Dashboard Data
     return {
         "test_run_summary": {
             "total_tests": total_tests,
@@ -437,7 +437,6 @@ def get_missing_coverage(jacoco_report_path: str) -> dict:
                         except ValueError:
                             # Skip if 'mi' or 'nr' is not a valid number
                             pass 
-                    # --- END OF FIX ---
 
                 if uncovered_lines:
                     full_class_name = f"{package_name.replace('/', '.')}.{class_name.split('/')[-1]}"
